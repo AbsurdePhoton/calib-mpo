@@ -1,7 +1,5 @@
 <p style="margin-bottom: 0in; line-height: 100%"><b>calib-mpo</b></p>
-<p style="margin-bottom: 0in; line-height: 100%"><b>Stereo camera
-calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or
-stereo MPO images</b></p>
+<p style="margin-bottom: 0in; line-height: 100%"><b>Stereo camera calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or stereo MPO images</b></p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
@@ -12,6 +10,7 @@ stereo MPO images</b></p>
 <p style="margin-bottom: 0in; line-height: 100%">The present code is
 under GPL v3 license, that means you can do almost whatever you want
 with it!</p>
+<p style="margin-bottom: 0in; line-height: 100%">I used bits of code from several sources, mainly from the openCV examples</p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
