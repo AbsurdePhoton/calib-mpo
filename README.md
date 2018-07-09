@@ -1,5 +1,5 @@
 <p><b>calib-mpo</b></p>
-<p><b>Stereo camera calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or stereo MPO images</b></p>
+<p><b>3D stereo camera calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or stereo MPO images</b></p>
 <br/>
 
 </p>
