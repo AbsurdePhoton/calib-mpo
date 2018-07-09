@@ -49,7 +49,7 @@ that's all I'm asking of it :)</p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
-<p style="margin-bottom: 0in; line-height: 100%"></>*** HOW?</b></p>
+<p style="margin-bottom: 0in; line-height: 100%"></><b>*** HOW?</b></p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
