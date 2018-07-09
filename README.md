@@ -1,7 +1,7 @@
-<b><p style="margin-bottom: 0in; line-height: 100%">calib-mpo</p>
-<p style="margin-bottom: 0in; line-height: 100%">Stereo camera</b>
+<p style="margin-bottom: 0in; line-height: 100%"><b>calib-mpo</b></p>
+<p style="margin-bottom: 0in; line-height: 100%"><b>Stereo camera
 calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or
-stereo MPO images</p>
+stereo MPO images</b></p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
@@ -15,7 +15,7 @@ with it!</p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
-<p style="margin-bottom: 0in; line-height: 100%">*** WHY?</p>
+<p style="margin-bottom: 0in; line-height: 100%"><b>*** WHY?</b></p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
@@ -29,7 +29,7 @@ that's all I'm asking of it :)</p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
-<p style="margin-bottom: 0in; line-height: 100%">*** WITH WHAT?</p>
+<p style="margin-bottom: 0in; line-height: 100%"><b>*** WITH WHAT?</b></p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
@@ -49,7 +49,7 @@ that's all I'm asking of it :)</p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
-<p style="margin-bottom: 0in; line-height: 100%">*** HOW?</p>
+<p style="margin-bottom: 0in; line-height: 100%"></>*** HOW?</b></p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
