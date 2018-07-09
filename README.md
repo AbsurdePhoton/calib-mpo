@@ -1,17 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 5.1.6.2 (Linux)"/>
-	<meta name="created" content="2018-07-10T00:25:03.043201075"/>
-	<meta name="changed" content="2018-07-10T01:09:42.867116450"/>
-	<style type="text/css">
-		@page { margin: 0.79in }
-		p { margin-bottom: 0.1in; line-height: 120% }
-	</style>
-</head>
-<body lang="en-US" dir="ltr">
 <p style="margin-bottom: 0in; line-height: 100%"># calib-mpo</p>
 <p style="margin-bottom: 0in; line-height: 100%">Stereo camera
 calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or
