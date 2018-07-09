@@ -1,5 +1,5 @@
-<p style="margin-bottom: 0in; line-height: 100%"># calib-mpo</p>
-<p style="margin-bottom: 0in; line-height: 100%">Stereo camera
+<b><p style="margin-bottom: 0in; line-height: 100%">calib-mpo</p>
+<p style="margin-bottom: 0in; line-height: 100%">Stereo camera</b>
 calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or
 stereo MPO images</p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
