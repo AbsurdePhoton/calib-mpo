@@ -154,7 +154,7 @@ software:</p>
 		</ul>
 		<li/>
 <p style="margin-bottom: 0in; line-height: 100%">When the
-		overall progress bar reaches 100%, be patient: your camera
+		overall progress bar reaches 100%, be patient: your camera lens
 		parameters are being computed – it can take a long time,
 		depending on your computer CPUs and the number of successful image
 		pairs (for good results, at least 30 for checkerboards and 15 for
