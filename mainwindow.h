@@ -1,4 +1,4 @@
-#-------------------------------------------------
+/*
 #
 #     Stereo Camera Calibration with OpenCV
 #
@@ -6,7 +6,7 @@
 #
 # Project created by QtCreator 2018-07-01T23:09:47
 #
-#-------------------------------------------------
+# */
 
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H

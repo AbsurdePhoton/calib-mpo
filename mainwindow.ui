@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Stereo Camera Calibration by AbsurdePhoton - www.absurdephoton.fr</string>
+   <string>Stereo Camera Calibration with QT and openCV - by AbsurdePhoton - www.absurdephoton.fr</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QProgressBar" name="progres">
@@ -650,7 +650,7 @@ Circles : number of rows</string>
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="type"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="type"/>
  </buttongroups>
 </ui>
