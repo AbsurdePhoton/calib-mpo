@@ -190,6 +190,6 @@ values from them. But this is another software to come soon.</p>
 
 </p>
 <p style="margin-bottom: 0in; line-height: 100%">AbsurdePhoton.</p>
-<p style="margin-bottom: 0in; line-height: 100%">My photographer website ''Photongénique'' www.absurdephoton.fr</p>
+<p style="margin-bottom: 0in; line-height: 100%">My photographer website ''Photongénique'': www.absurdephoton.fr</p>
 </body>
 </html>
