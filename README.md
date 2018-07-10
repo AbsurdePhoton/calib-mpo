@@ -17,7 +17,7 @@ with it!</p>
 <br/>
 
 </p>
-<p>I didn't find any simple tool (understand: GUI) to calibrate my lens for stereo photography. So why not writing it myself ?</p>
+<p>I didn't find any simple tool (understand: GUI) to calibrate my lens for stereo photography, because my camera produces MPO files. So why not writing it myself ?</p>
 <p>I'm not an ace of C++ and QT, in fact I only started using them some month ago. So, if you don't find my code pretty never mind, because it WORKS, and that's all I'm asking of it :)</p>
 <br/>
 
