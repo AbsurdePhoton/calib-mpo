@@ -2,30 +2,24 @@
 <p><b>3D stereo camera calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or stereo MPO images</b></p>
 <br/>
 
-</p>
 <p>2018-07-10</p>
 <br/>
 
-</p>
 <p>The present code is under GPL v3 license, that means you can do almost whatever you want
 with it!</p>
 <p>I used bits of code from several sources, mainly from the openCV examples</p>
 <br/>
 
-</p>
 <p><b>*** WHY?</b></p>
 <br/>
 
-</p>
 <p>I didn't find any simple tool (understand: GUI) to calibrate my lens for stereo photography, because my camera produces MPO files. So why not writing it myself ?</p>
 <p>I'm not an ace of C++ and QT, in fact I only started using them some month ago. So, if you don't find my code pretty never mind, because it WORKS, and that's all I'm asking of it :)</p>
 <br/>
 
-</p>
 <p><b>*** WITH WHAT?</b></p>
 <br/>
 
-</p>
 <p>Developed using:</p>
 <ul>
 	<li/>
@@ -39,16 +33,16 @@ with it!</p>
 	<li/>
 <p>openCV 3.4.1</p>
 </ul>
+
+<p>This software should also work under Microsoft Windows: if you tried it successfully please contact me.</p>
 <br/>
 
-</p>
 <p></><b>*** HOW?</b></p>
 <br/>
 
 <p> You must first take pictures of checkerboards or circle grids like explained here : https://docs.opencv.org/3.4.1/d4/d94/tutorial_camera_calibration.html</p>
 <br/>
 
-</p>
 <p>How to use the software:</p>
 <ul>
 	<li/>
@@ -129,16 +123,11 @@ with it!</p>
 </ul>
 <br/>
 
-</p>
 <p>The resulting XML files produced by the software will be useful when you want to rectify stereo pairs before computing a depthmap, or find extrinsic values from them. But this is another software to come soon.</p>
 <br/>
 
-</p>
 <p>Enjoy!</p>
 <br/>
 
-</p>
 <p>AbsurdePhoton.</p>
 <p>My photographer website ''Photongénique'': www.absurdephoton.fr</p>
-</body>
-</html>
