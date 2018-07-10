@@ -8,40 +8,35 @@ using namespace cv;
 
 bool MPO2Pixmap(QString source, vector<QPixmap>& vector) {
     int count = 0;
-    int laufIndex, fileLength;
+    int index, fileLength;
     int secondImageStart = 0;
-    // open MPO file as datastream
-    QFile imageFile(source);
-    // open if exist
+
+    QFile imageFile(source); // open MPO file as datastream
     if (imageFile.exists()) {
-        // open file in read only mode
-        imageFile.open(QIODevice::ReadOnly);
+        imageFile.open(QIODevice::ReadOnly); // read-only mode
         QDataStream dataInfilestream(&imageFile);
-        // get file length
         fileLength = imageFile.size();
-        // define data vector
-        QVector<uchar> imageData(fileLength);
+
         // read data from stream
+        QVector<uchar> imageData(fileLength); // data vector
         while(!dataInfilestream.atEnd()) {
-            // copy file bytewise
             dataInfilestream >> imageData[count++];
         }
-        // close file
         imageFile.close();
-        // search for beginning of second image (normaly at half of the full MPO file)
-        for (laufIndex = (int)(fileLength * 0.40); laufIndex < (int)(fileLength * 0.60); laufIndex++) {
-            if ((imageData[laufIndex] == 0xFF) && (imageData[laufIndex+1] == 0xD8) \
-              && (imageData[laufIndex+2] == 0xFF) && (imageData[laufIndex+3] == 0xE1)) {
-                secondImageStart = laufIndex;
+
+        // look for marker of second image at (+/- 10%) half  of the full MPO file
+        for (index = (int)(fileLength * 0.40); index < (int)(fileLength * 0.60); index++) {
+            if ((imageData[index] == 0xFF) && (imageData[index+1] == 0xD8) \
+              && (imageData[index+2] == 0xFF) && (imageData[index+3] == 0xE1)) {
+                secondImageStart = index;
                 break;
             };
         }
-        // if no seperator is found
-        if (secondImageStart == 0) {
+        if (secondImageStart == 0) { // no separator found
             return false;
         }
 
-        // create QPixmap variables to store the images
+        // QPixmap variables to store the images
         QPixmap *leftView = new QPixmap;
         QPixmap *rightView = new QPixmap;
         // copy the 2 jpegs in buffers
@@ -61,36 +56,33 @@ bool MPO2Pixmap(QString source, vector<QPixmap>& vector) {
 bool MPO2Mat(QString source, vector<cv::Mat>& vector)
 {
     int count = 0;
-    int laufIndex, fileLength;
+    int index, fileLength;
     int secondImageStart = 0;
-    // open MPO file as datastream
-    QFile imageFile(source);
+
+    QFile imageFile(source); // open MPO file as datastream
     // open if exist
     if (imageFile.exists()) {
-        // open file in read only mode
-        imageFile.open(QIODevice::ReadOnly);
+        imageFile.open(QIODevice::ReadOnly); // read-only mode
         QDataStream dataInfilestream(&imageFile);
         // get file length
         fileLength = imageFile.size();
-        // define data vector
-        QVector<uchar> imageData(fileLength);
+
         // read data from stream
+        QVector<uchar> imageData(fileLength);  // data vector
         while(!dataInfilestream.atEnd()) {
-            // copy file bytewise
             dataInfilestream >> imageData[count++];
         }
-        // close file
         imageFile.close();
-        // search for beginning of second image (normaly at half of the full MPO file)
-        for (laufIndex = (int)(fileLength * 0.40); laufIndex < (int)(fileLength * 0.60); laufIndex++) {
-            if ((imageData[laufIndex] == 0xFF) && (imageData[laufIndex+1] == 0xD8) \
-              && (imageData[laufIndex+2] == 0xFF) && (imageData[laufIndex+3] == 0xE1)) {
-                secondImageStart = laufIndex;
+
+        // look for marker of second image at (+/- 10%) half  of the full MPO file
+        for (index = (int)(fileLength * 0.40); index < (int)(fileLength * 0.60); index++) {
+            if ((imageData[index] == 0xFF) && (imageData[index+1] == 0xD8) \
+              && (imageData[index+2] == 0xFF) && (imageData[index+3] == 0xE1)) {
+                secondImageStart = index;
                 break;
             }
         }
-        // if no seperator is found
-        if (secondImageStart == 0) {
+        if (secondImageStart == 0) { // no separator found
             return false;
         }
 
