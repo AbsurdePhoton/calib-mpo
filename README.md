@@ -45,6 +45,9 @@ with it!</p>
 <p></><b>*** HOW?</b></p>
 <br/>
 
+<p> You must first take pictures of checkerboards or circle grids like explained here : https://docs.opencv.org/3.4.1/d4/d94/tutorial_camera_calibration.html</p>
+<br/>
+
 </p>
 <p>How to use the software:</p>
 <ul>
