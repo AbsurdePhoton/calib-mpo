@@ -131,7 +131,7 @@ you will be asked a folder location where you will save the lens parameters, in 
 </ul>
 <br/>
 
-The resulting XML files produced by the software will be useful when you want to rectify stereo pairs before computing a depthmap, or find extrinsic values from them. But this is another software to come soon.
+The resulting XML files produced by the software will be useful when you want to rectify stereo pairs before computing a depthmap, or find extrinsic values from them. My disparity and depth map filtering utility is avalable here : https://github.com/AbsurdePhoton/disparity-filtering-mpo
 <br/>
 <br/>
 
