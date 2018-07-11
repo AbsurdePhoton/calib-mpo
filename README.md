@@ -1,4 +1,7 @@
-<b>calib-mpo</b>
+# calib-mpo
+<br/>
+
+![Screenshot](AbsurdePhoton/calib-mpo/screenshot.jpg)
 <br/>
 
 <b>3D stereo camera calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or stereo MPO images</b>
