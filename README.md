@@ -37,7 +37,7 @@ openCV 3.4.1
 This software should also work under Microsoft Windows: if you tried it successfully please contact me.
 <br/>
 
-</><b>*** HOW?</b>
+<b>*** HOW?</b>
 <br/>
 
  You must first take pictures of checkerboards or circle grids like explained here : https://docs.opencv.org/3.4.1/d4/d94/tutorial_camera_calibration.html
@@ -100,7 +100,6 @@ Select several image files (with  &lt;SHIFT&gt; and &lt;CTRL&gt;)
 The stereo pairs are displayed and processed. If the patterns (checkerboard or circles) are found, they are drawn over the original image
 		<li/>
  There are indicators during this first part: 
-		
 		<ul>
 			<li/>
 the blue progress bar represents the overall progress
