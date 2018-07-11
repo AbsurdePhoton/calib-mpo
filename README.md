@@ -1,133 +1,133 @@
-<p><b>calib-mpo</b></p>
-<p><b>3D stereo camera calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or stereo MPO images</b></p>
+<b>calib-mpo</b>
+<b>3D stereo camera calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or stereo MPO images</b>
 <br/>
 
-<p>v1 2018-07-10</p>
+v1 2018-07-10
 <br/>
 
-<p>The present code is under GPL v3 license, that means you can do almost whatever you want
-with it!</p>
-<p>I used bits of code from several sources, mainly from the openCV examples</p>
+The present code is under GPL v3 license, that means you can do almost whatever you want
+with it!
+I used bits of code from several sources, mainly from the openCV examples
 <br/>
 
-<p><b>*** WHY?</b></p>
+<b>*** WHY?</b>
 <br/>
 
-<p>I didn't find any simple tool (understand: GUI) to calibrate my lens for stereo photography, because my camera produces MPO files. So why not writing it myself ?</p>
-<p>I'm not an ace of C++ and QT, in fact I only started using them some month ago. So, if you don't find my code pretty never mind, because it WORKS, and that's all I'm asking of it :)</p>
+I didn't find any simple tool (understand: GUI) to calibrate my lens for stereo photography, because my camera produces MPO files. So why not writing it myself ?
+I'm not an ace of C++ and QT, in fact I only started using them some month ago. So, if you don't find my code pretty never mind, because it WORKS, and that's all I'm asking of it :)
 <br/>
 
-<p><b>*** WITH WHAT?</b></p>
+<b>*** WITH WHAT?</b>
 <br/>
 
-<p>Developed using:</p>
+Developed using:
 <ul>
 	<li/>
-<p>Linux: Ubuntu
-	16.04</p>
+Linux: Ubuntu
+	16.04
 	<li/>
-<p>QT Creator
-	3.5.1</p>
+QT Creator
+	3.5.1
 	<li/>
-<p>QT 5.5.1</p>
+QT 5.5.1
 	<li/>
-<p>openCV 3.4.1</p>
+openCV 3.4.1
 </ul>
 
-<p>This software should also work under Microsoft Windows: if you tried it successfully please contact me.</p>
+This software should also work under Microsoft Windows: if you tried it successfully please contact me.
 <br/>
 
-<p></><b>*** HOW?</b></p>
+</><b>*** HOW?</b>
 <br/>
 
-<p> You must first take pictures of checkerboards or circle grids like explained here : https://docs.opencv.org/3.4.1/d4/d94/tutorial_camera_calibration.html</p>
+ You must first take pictures of checkerboards or circle grids like explained here : https://docs.opencv.org/3.4.1/d4/d94/tutorial_camera_calibration.html
 <br/>
 
-<p>How to use the software:</p>
+How to use the software:
 <ul>
 	<li/>
-<p>Select the type of board (openCV-type) you photographed: checkerboard, symmetric or asymmetric circles</p>
+Select the type of board (openCV-type) you photographed: checkerboard, symmetric or asymmetric circles
 	<ul>
 		<li/>
-<p>Checkerboard:</p>
+Checkerboard:
 		<ul>
 			<li/>
-<p>enter the number of inner corners: H x V where H  is the number of columns	and V the number of rows</p>
+enter the number of inner corners: H x V where H  is the number of columns	and V the number of rows
 			<li/>
-<p>enter the size (in millimeters) of the side length of the squares</p>
+enter the size (in millimeters) of the side length of the squares
 		</ul>
 		<li/>
-<p>Symmetric circles:</p>
+Symmetric circles:
 		<ul>
 			<li/>
-<p>enter the number of circles: H x V where H  is the number of circles per columns and V the number of rows</p>
+enter the number of circles: H x V where H  is the number of circles per columns and V the number of rows
 			<li/>
-<p>enter the size (in millimeters) of the circles diameter</p>
+enter the size (in millimeters) of the circles diameter
 		</ul>
 		<li/>
-<p>Asymmetric circles:</p>
+Asymmetric circles:
 		<ul>
 			<li/>
-<p>enter the number of circles: H x V where H  is the number of circles per columns (it is the same one every row, even if they are shifted) and V the number of rows</p>
+enter the number of circles: H x V where H  is the number of circles per columns (it is the same one every row, even if they are shifted) and V the number of rows
 			<li/>
-<p>enter the size (in millimeters) of the circles diameter</p>
+enter the size (in millimeters) of the circles diameter
 		</ul>
 	</ul>
 	<li/>
-<p>Enter your camera’s sensor size (in millimeters)</p>
+Enter your camera’s sensor size (in millimeters)
 	<li/>
-<p>Select whether your images are in MPO format or not. openCV accepts many image types like JGP, PNG, TIF…</p>
+Select whether your images are in MPO format or not. openCV accepts many image types like JGP, PNG, TIF…
 	<ul>
 		<li/>
-<p>Your MPO images must contain two jpegs, forming a stereo pair</p>
+Your MPO images must contain two jpegs, forming a stereo pair
 		<li/>
-<p>If not using MPO, this is how it works:</p>
+If not using MPO, this is how it works:
 		<ul>
 			<li/>
-<p>provide 2 files for each stereo pair</p>
+provide 2 files for each stereo pair
 			<li/>
-<p>the pair is composed of 2 separate images: first file = LEFT, second file = RIGHT</p>
+the pair is composed of 2 separate images: first file = LEFT, second file = RIGHT
 			<li/>
-<p>of course the total number of files must be EVEN</p>
+of course the total number of files must be EVEN
 		</ul>
 	</ul>
 	<li/>
-<p>Click on the CALIBRATE button:</p>
+Click on the CALIBRATE button:
 	<ul>
 		<li/>
-<p>Select several image files (with  &lt;SHIFT&gt; and &lt;CTRL&gt;)</p>
+Select several image files (with  &lt;SHIFT&gt; and &lt;CTRL&gt;)
 		<li/>
-<p>The stereo pairs are displayed and processed. If the patterns (checkerboard or circles) are found, they are drawn over the original image</p>
+The stereo pairs are displayed and processed. If the patterns (checkerboard or circles) are found, they are drawn over the original image
 		<li/>
-<p> There are indicators during this first part: 
-		</p>
+ There are indicators during this first part: 
+		
 		<ul>
 			<li/>
-<p>the blue progress bar represents the overall progress</p>
+the blue progress bar represents the overall progress
 			<li/>
-<p>the red one shows the images that didn’t match the pattern (the red LED indicator also shows that information)</p>
+the red one shows the images that didn’t match the pattern (the red LED indicator also shows that information)
 			<li/>
-<p>the green LED indicator shows the successful patterns found in stereo pairs</p>
+the green LED indicator shows the successful patterns found in stereo pairs
 		</ul>
 		<li/>
-<p>When the overall progress bar reaches 100%, be patient: your camera lens parameters are being computed – it can take a long time, depending on your computer CPUs and the number of successful image pairs (for good results, at least 30 for checkerboards and 15 for circles)</p>
+When the overall progress bar reaches 100%, be patient: your camera lens parameters are being computed – it can take a long time, depending on your computer CPUs and the number of successful image pairs (for good results, at least 30 for checkerboards and 15 for circles)
 		<li/>
-<p>When the parameters are found:</p>
+When the parameters are found:
 		<ul>
 			<li/>
-<p>a message shows the average errors found for the images, for the left and right lens, AND the stereo pairs</p>
+a message shows the average errors found for the images, for the left and right lens, AND the stereo pairs
 			<li/>
-<p>you will be asked a folder location where you will save the lens parameters, in openCV format (XML and YAML). 3 files will be created: calibration-left, calibration-right and calibration-stereo.xml</p>
+you will be asked a folder location where you will save the lens parameters, in openCV format (XML and YAML). 3 files will be created: calibration-left, calibration-right and calibration-stereo.xml
 		</ul>
 	</ul>
 </ul>
 <br/>
 
-<p>The resulting XML files produced by the software will be useful when you want to rectify stereo pairs before computing a depthmap, or find extrinsic values from them. But this is another software to come soon.</p>
+The resulting XML files produced by the software will be useful when you want to rectify stereo pairs before computing a depthmap, or find extrinsic values from them. But this is another software to come soon.
 <br/>
 
-<p>Enjoy!</p>
+Enjoy!
 <br/>
 
-<p>AbsurdePhoton.</p>
-<p>My photographer website ''Photongénique'': www.absurdephoton.fr</p>
+<b>AbsurdePhoton</b>.
+My photographer website ''Photongénique'': www.absurdephoton.fr
