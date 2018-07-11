@@ -2,7 +2,7 @@
  * File  : mpo.h
  * Author: AbsurdePhoton
  *
- * Created on 2018/07/08
+ * v1 2018/07/08
  *
  * Reads MPO stereo image files
  *

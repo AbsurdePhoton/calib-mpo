@@ -1,3 +1,14 @@
+/*
+ * File  : mat-image-tools.cpp
+ * Author: AbsurdePhoton
+ *
+ * v1 2018/07/08
+ *
+ * Converts mat images to QPixmap or QImage
+ * Set brightness and contrast to Mat image
+ *
+ */
+
 #include <QPixmap>
 
 #include "opencv2/opencv.hpp"
@@ -14,7 +25,14 @@ QImage Mat2QImage(cv::Mat const& src)
      return dest;
 }
 
-QPixmap Mat2QPixmap(cv::Mat source, int max_width, int max_height)
+QPixmap Mat2QPixmap(cv::Mat source)
+{
+    QImage i = Mat2QImage(source);
+    QPixmap p = QPixmap::fromImage(i, Qt::AutoColor);
+    return p;
+}
+
+QPixmap Mat2QPixmapResized(cv::Mat source, int max_width, int max_height)
 {
     QImage i = Mat2QImage(source);
     QPixmap p = QPixmap::fromImage(i, Qt::AutoColor);

@@ -1,3 +1,13 @@
+/*
+ * File  : mpo.cpp
+ * Author: AbsurdePhoton
+ *
+ * v1 2018/07/08
+ *
+ * Reads MPO stereo image files
+ *
+ */
+
 #include <QPixmap>
 #include <QFile>
 
