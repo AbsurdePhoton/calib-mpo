@@ -1,8 +1,12 @@
 <b>calib-mpo</b>
+<br/>
 <b>3D stereo camera calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or stereo MPO images</b>
 <br/>
 
 v1 2018-07-10
+<br/>
+
+<b>*** LICENSE</b>
 <br/>
 
 The present code is under GPL v3 license, that means you can do almost whatever you want
