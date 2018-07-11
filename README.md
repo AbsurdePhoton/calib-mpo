@@ -1,18 +1,13 @@
 # calib-mpo
-<br/>
+
+## 3D stereo camera calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or stereo MPO images</b>
 
 ![Screenshot](screenshot.jpg)
+
+### v1 2018-07-10
 <br/>
 
-<b>3D stereo camera calibration with QT and openCV, using stereo pairs (PNG, TIF, JPG) or stereo MPO images</b>
-<br/>
-
-v1 2018-07-10
-<br/>
-<br/>
-
-<b>*** LICENSE</b>
-<br/>
+## LICENSE
 
 The present code is under GPL v3 license, that means you can do almost whatever you want
 with it!
@@ -20,16 +15,14 @@ I used bits of code from several sources, mainly from the openCV examples
 <br/>
 <br/>
 
-<b>*** WHY?</b>
-<br/>
+## WHY?
 
 I didn't find any simple tool (understand: GUI) to calibrate my lens for stereo photography, because my camera produces MPO files. So why not writing it myself ?
 I'm not an ace of C++ and QT, in fact I only started using them some month ago. So, if you don't find my code pretty never mind, because it WORKS, and that's all I'm asking of it :)
 <br/>
 <br/>
 
-<b>*** WITH WHAT?</b>
-<br/>
+## WITH WHAT?
 
 Developed using:
 <ul>
