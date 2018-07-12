@@ -53,9 +53,9 @@ void MainWindow::Calibration() {
     if (ui->radioButton_alternate->isChecked()) fileType = "alt";
     QStringList filenames;
     if (fileType == "MPO")
-        filenames = QFileDialog::getOpenFileNames(this, "Choose MPO files to calibrate...", "/media/Photo/Travail/Calibration", "*.mpo *.MPO");
+        filenames = QFileDialog::getOpenFileNames(this, "Choose MPO files to calibrate...", "/home", "*.mpo *.MPO");
     if (fileType == "alt")
-        filenames = QFileDialog::getOpenFileNames(this, "Choose files (alternate left/right) to calibrate...", "/media/Photo/Travail/Calibration", "*.jpg *.JPG *.png *.PNG *.tif *.TIF");
+        filenames = QFileDialog::getOpenFileNames(this, "Choose files (alternate left/right) to calibrate...", "/home", "*.jpg *.JPG *.png *.PNG *.tif *.TIF");
     if (filenames.isEmpty())
         return;
     if ((fileType == "alt") && ((filenames.size() % 2) == 1))
