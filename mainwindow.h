@@ -30,10 +30,12 @@ public:
 
 private slots:
     void on_load_clicked();
+    void on_Abort_clicked();
 
 private:
     Ui::MainWindow *ui;
     void Calibration();
+    bool abort;
 
 };
 

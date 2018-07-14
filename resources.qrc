@@ -1,6 +1,7 @@
-<!DOCTYPE RCC><RCC version="1.0">
-<qresource>
-  <file>./icons/absurdephoton.png</file>
-  <file>./icons/compute.png</file>
-</qresource>
+<RCC>
+    <qresource prefix="/">
+        <file>icons/absurdephoton.png</file>
+        <file>icons/compute.png</file>
+        <file>icons/stop.png</file>
+    </qresource>
 </RCC>

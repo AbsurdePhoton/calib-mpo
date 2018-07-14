@@ -53,9 +53,9 @@ void MainWindow::Calibration() {
     if (ui->radioButton_alternate->isChecked()) fileType = "alt";
     QStringList filenames;
     if (fileType == "MPO")
-        filenames = QFileDialog::getOpenFileNames(this, "Choose MPO files to calibrate...", "/home", "*.mpo *.MPO");
+        filenames = QFileDialog::getOpenFileNames(this, "Choose MPO files to calibrate...", "/media/Photo/Travail/Calibration", "*.mpo *.MPO");
     if (fileType == "alt")
-        filenames = QFileDialog::getOpenFileNames(this, "Choose files (alternate left/right) to calibrate...", "/home", "*.jpg *.JPG *.png *.PNG *.tif *.TIF");
+        filenames = QFileDialog::getOpenFileNames(this, "Choose files (alternate left/right) to calibrate...", "/media/Photo/Travail/Calibration", "*.jpg *.JPG *.png *.PNG *.tif *.TIF");
     if (filenames.isEmpty())
         return;
     if ((fileType == "alt") && ((filenames.size() % 2) == 1))
@@ -83,6 +83,7 @@ void MainWindow::Calibration() {
     qApp->processEvents();
 
     SimpleBlobDetector::Params parameters;
+    // Filter by Area.
     parameters.maxArea = 100000;
     parameters.minArea = 500;
     parameters.filterByColor = false;
@@ -96,7 +97,13 @@ void MainWindow::Calibration() {
     vector<vector<Point2f>> image_pointsR;
     cv::Size size;
 
+    abort = false;
+
     for (QStringList::const_iterator it = filenames.begin(); it != filenames.end(); ++it) {
+
+        if (abort) // If Abort button clicked
+            return;
+
         total++;
         ui->progres->setValue(total);
         qApp->processEvents();
@@ -331,6 +338,10 @@ void MainWindow::Calibration() {
     }
 }
 
-void MainWindow::on_load_clicked() {
+void MainWindow::on_load_clicked() { // Launch calibration
     Calibration();
+}
+
+void MainWindow::on_Abort_clicked() { // Stop calibration
+    abort = true;
 }
