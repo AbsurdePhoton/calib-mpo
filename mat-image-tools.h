@@ -2,7 +2,7 @@
  * File  : mat-image-tools.h
  * Author: AbsurdePhoton
  *
- * v1.1 2018/07/15
+ * v1 2018/07/08
  *
  * Converts mat images to QPixmap or QImage
  * Set brightness and contrast to Mat image
