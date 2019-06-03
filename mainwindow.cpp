@@ -20,6 +20,7 @@
 #include "opencv2/ximgproc/disparity_filter.hpp"
 #include "opencv2/opencv.hpp"
 #include "opencv2/core/utility.hpp"
+#include <opencv2/core/types_c.h>
 
 #include <QFileDialog>
 #include <QMainWindow>
@@ -53,9 +54,9 @@ void MainWindow::Calibration() {
     if (ui->radioButton_alternate->isChecked()) fileType = "alt";
     QStringList filenames;
     if (fileType == "MPO")
-        filenames = QFileDialog::getOpenFileNames(this, "Choose MPO files to calibrate...", ".", "MPO image (*.mpo *.MPO)");
+        filenames = QFileDialog::getOpenFileNames(this, "Choose MPO files to calibrate...", "/media/Photo/Travail/Calibration", "MPO image (*.mpo *.MPO)");
     if (fileType == "alt")
-        filenames = QFileDialog::getOpenFileNames(this, "Choose files (alternate left/right) to calibrate...", ".", "Images (*.jpg *.JPG *.jpeg *.JPEG *.jp2 *.JP2 *.png *.PNG *.tif *.TIF *.tiff *.TIFF *.bmp *.BMP)");
+        filenames = QFileDialog::getOpenFileNames(this, "Choose files (alternate left/right) to calibrate...", "/media/Photo/Travail/Calibration", "Images (*.jpg *.JPG *.jpeg *.JPEG *.jp2 *.JP2 *.png *.PNG *.tif *.TIF *.tiff *.TIFF *.bmp *.BMP)");
     if (filenames.isEmpty())
         return;
     if ((fileType == "alt") && ((filenames.size() % 2) == 1))
@@ -115,11 +116,11 @@ void MainWindow::Calibration() {
         }
         if (fileType == "alt") {
             std::string name = (*it).toStdString();
-            matImages[0] = cv::imread(name, CV_LOAD_IMAGE_COLOR);
+            matImages[0] = cv::imread(name, cv::IMREAD_COLOR);
             success = (matImages[0].data != NULL);
             if (success) {
                 it++;
-                matImages[1] = cv::imread((*it).toStdString(), CV_LOAD_IMAGE_COLOR);
+                matImages[1] = cv::imread((*it).toStdString(), cv::IMREAD_COLOR);
                 success = (matImages[1].data != NULL);
             }
         }
@@ -135,7 +136,7 @@ void MainWindow::Calibration() {
             vector<Point2f> cornersL;
 
             cv::Mat grayL;
-            cv::cvtColor(matImages[0], grayL, CV_BGR2GRAY);
+            cv::cvtColor(matImages[0], grayL, cv::COLOR_BGR2GRAY);
 
             bool foundL = false;
             if (type == "checkerboards") foundL = cv::findChessboardCorners(grayL, cv::Size(ref_width,ref_height), cornersL,
@@ -173,7 +174,7 @@ void MainWindow::Calibration() {
             vector<Point2f> cornersR;
 
             cv::Mat grayR;
-            cv::cvtColor(matImages[1], grayR, CV_BGR2GRAY);
+            cv::cvtColor(matImages[1], grayR, cv::COLOR_BGR2GRAY);
 
             bool foundR = false;
             if (type == "checkerboards") foundR = cv::findChessboardCorners(grayR, cv::Size(ref_width,ref_height), cornersR,

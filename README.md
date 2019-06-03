@@ -26,7 +26,7 @@ Developed using:
 * Linux: Ubuntu	16.04
 * QT Creator 3.5.1
 * QT 5.5.1
-* openCV 3.4.1
+* openCV 4.1 compiled with openCV-contribs - should work with 3.x versions without much editing
 
 This software should also work under Microsoft Windows: if you tried it successfully please contact me.
 <br/>
