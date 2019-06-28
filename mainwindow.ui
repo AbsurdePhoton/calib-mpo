@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Stereo Camera Calibration with QT and openCV - by AbsurdePhoton - www.absurdephoton.fr</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/camera.png</normaloff>:/icons/camera.png</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QProgressBar" name="progres">
     <property name="geometry">
@@ -723,7 +727,7 @@ Circles : number of rows</string>
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="type"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="type"/>
  </buttongroups>
 </ui>

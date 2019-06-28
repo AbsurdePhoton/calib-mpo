@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>icons/absurdephoton.png</file>
+        <file>icons/camera.png</file>
         <file>icons/compute.png</file>
         <file>icons/stop.png</file>
     </qresource>
