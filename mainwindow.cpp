@@ -127,8 +127,8 @@ void MainWindow::Calibration() {
 
         if (success) {
             // display the 2 jpegs
-            ui->gauche->setPixmap(Mat2QPixmapResized(matImages[0], ui->gauche->width(), ui->gauche->height()));
-            ui->droite->setPixmap(Mat2QPixmapResized(matImages[1], ui->droite->width(), ui->droite->height()));
+            ui->gauche->setPixmap(Mat2QPixmapResized(matImages[0], ui->gauche->width(), ui->gauche->height(), true));
+            ui->droite->setPixmap(Mat2QPixmapResized(matImages[1], ui->droite->width(), ui->droite->height(), true));
             qApp->processEvents();
 
             // LEFT IMAGE
@@ -153,7 +153,7 @@ void MainWindow::Calibration() {
                                        cv::TermCriteria(TermCriteria::EPS | TermCriteria::COUNT, 50, 0.1));
                 cv::drawChessboardCorners(disp_colorL, cvSize(ref_width,ref_height), cornersL, foundL);
 
-                QPixmap disp_pixmapL = Mat2QPixmapResized(disp_colorL, ui->result_left->width(), ui->result_left->height());
+                QPixmap disp_pixmapL = Mat2QPixmapResized(disp_colorL, ui->result_left->width(), ui->result_left->height(), true);
                 ui->result_left->setPixmap(disp_pixmapL);
                 qApp->processEvents();
 
@@ -191,7 +191,7 @@ void MainWindow::Calibration() {
                                      cv::TermCriteria(TermCriteria::EPS | TermCriteria::COUNT, 50, 0.1));
               cv::drawChessboardCorners(disp_colorR, cvSize(ref_width,ref_height), cornersR, foundR);
 
-              QPixmap disp_pixmapR = Mat2QPixmapResized(disp_colorR, ui->result_right->width(), ui->result_right->height());
+              QPixmap disp_pixmapR = Mat2QPixmapResized(disp_colorR, ui->result_right->width(), ui->result_right->height(), true);
               ui->result_right->setPixmap(disp_pixmapR);
               qApp->processEvents();
 
