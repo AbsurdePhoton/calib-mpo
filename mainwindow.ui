@@ -360,7 +360,7 @@ Circles : number of rows</string>
      <number>20</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="label_board">
     <property name="geometry">
      <rect>
       <x>760</x>
@@ -373,7 +373,7 @@ Circles : number of rows</string>
      <string>Board :</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="label_X">
     <property name="geometry">
      <rect>
       <x>790</x>
@@ -386,7 +386,7 @@ Circles : number of rows</string>
      <string>X</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="label_mm">
     <property name="geometry">
      <rect>
       <x>820</x>
@@ -539,7 +539,7 @@ Circles : number of rows</string>
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="label_sensor">
     <property name="geometry">
      <rect>
       <x>970</x>
@@ -615,7 +615,7 @@ Circles : number of rows</string>
      </attribute>
     </widget>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="label_about">
     <property name="geometry">
      <rect>
       <x>970</x>
@@ -634,7 +634,7 @@ Circles : number of rows</string>
      <number>3</number>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Stereo Camera Calibration&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;with OpenCV&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;by &lt;span style=&quot; color:#d89d1a;&quot;&gt;AbsurdePhoton&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https::/www.absurdephoton.fr&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.absurdephoton.fr&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Stereo Camera Calibration&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;with OpenCV&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;by &lt;span style=&quot; color:#d89d1a;&quot;&gt;AbsurdePhoton&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.absurdephoton.fr&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.absurdephoton.fr&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -643,12 +643,12 @@ Circles : number of rows</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="label_logo">
     <property name="geometry">
      <rect>
       <x>1160</x>
       <y>610</y>
-      <width>71</width>
+      <width>51</width>
       <height>61</height>
      </rect>
     </property>
@@ -703,13 +703,13 @@ Circles : number of rows</string>
    <zorder>spinBox_width</zorder>
    <zorder>spinBox_height</zorder>
    <zorder>spinBox_size</zorder>
-   <zorder>label</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
+   <zorder>label_board</zorder>
+   <zorder>label_X</zorder>
+   <zorder>label_mm</zorder>
    <zorder>frame_3</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_7</zorder>
-   <zorder>label_8</zorder>
+   <zorder>label_sensor</zorder>
+   <zorder>label_about</zorder>
+   <zorder>label_logo</zorder>
    <zorder>Abort</zorder>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
